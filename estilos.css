@@ -1,36 +1,60 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #E5E5E5;
-    
+
 }
-.container{
+
+.container {
     width: 614px;
 }
-.topbar{
+
+.topbar {
     height: 92px;
     width: 100%;
     background-color: #CF2B2B;
     margin: 0px 0px 35px 0px;
+    position: relative;
 }
 
-.escolhas{
+.topbar h1 {
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    font-family: 'Righteous', cursive;
+}
+
+.topbar h2 {
+    font-size: 16px;
+    position: absolute;
+    color: white;
+    left: 16px;
+    bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.escolhas {
     display: flex;
     flex-direction: row;
     padding: 35px 0px;
     position: relative;
     overflow-x: scroll;
 }
-.escolhas > h1{
-  font-size: 25px;
-  position:absolute;
-  left: 16px;
-  top: 0px;
-  font-family: 'Righteous', cursive;
+
+.escolhas>h1 {
+    font-size: 25px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    font-family: 'Righteous', cursive;
 }
-.escolha{
+
+.escolha {
     display: flex;
     flex-direction: column;
     width: 172px;
@@ -41,26 +65,52 @@ body{
     align-items: flex-start;
     box-sizing: border-box;
     padding: 18px 14px 0px 14px;
-    
+
 }
 
-.escolha img{
+.escolha img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
     margin-bottom: 8px;
 }
 
-.escolha h1{
+.escolha h1 {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.escolha p{
-color: #a6a6a6;
-font-family: 'Roboto', sans-serif;
-font-size: 15px;
-margin-bottom: 10px;
+.escolha p {
+    color: #a6a6a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.bottombar {
+    display: flex;
+    height: 92px;
+    background-color: #ffffff;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottombar button {
+    width: 390px;
+    height: 75px;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    background-color: #cbcbcb;
+    border: none;
+    box-sizing: border-box;
+    padding: 7px 60px 14px;
+
+
 }
