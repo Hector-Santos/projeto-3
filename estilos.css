@@ -9,14 +9,21 @@ body {
 
 .container {
     width: 614px;
+    position: relative;
 }
-
+.conteudo{
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
 .topbar {
     height: 92px;
-    width: 100%;
+    width: 614px;
     background-color: #CF2B2B;
     margin: 0px 0px 35px 0px;
     position: relative;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 5px rgba(0,0,0,0.3);
 }
 
 .topbar h1 {
@@ -63,9 +70,12 @@ body {
     border-radius: 9px;
     margin: 0px 0px 0px 16px;
     align-items: flex-start;
-    box-sizing: border-box;
     padding: 18px 14px 0px 14px;
 
+
+}
+.escolhido{
+    border: 5px solid #32B72F;
 }
 
 .escolha img {
@@ -92,10 +102,15 @@ body {
 .bottombar {
     display: flex;
     height: 92px;
+    width: 614px;
     background-color: #ffffff;
     position: relative;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    position: fixed;
+
 }
 
 .bottombar button {
@@ -111,6 +126,5 @@ body {
     border: none;
     box-sizing: border-box;
     padding: 7px 60px 14px;
-
-
 }
+.fechapedido
