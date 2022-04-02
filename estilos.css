@@ -61,6 +61,7 @@ body {
     font-family: 'Righteous', cursive;
 }
 
+
 .escolha {
     display: flex;
     flex-direction: column;
@@ -91,6 +92,12 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
+.escolha h2 {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 .escolha p {
     color: #a6a6a6;
@@ -113,7 +120,7 @@ body {
 
 }
 
-.bottombar button {
+.pedido {
     width: 390px;
     height: 75px;
     border-radius: 50px;
@@ -127,4 +134,17 @@ body {
     box-sizing: border-box;
     padding: 7px 60px 14px;
 }
-.fechapedido
+.fechapedido{
+    width: 390px;
+    height: 75px;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    background-color: #32B72F;
+    border: none;
+    box-sizing: border-box;
+    padding: 7px 60px 14px;
+}
