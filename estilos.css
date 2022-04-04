@@ -7,23 +7,26 @@ body {
 
 }
 
+
 .container {
-    width: 614px;
+    width: 100%;
     position: relative;
 }
-.conteudo{
+
+.conteudo {
     margin-top: 130px;
     margin-bottom: 100px;
 }
+
 .topbar {
     height: 92px;
-    width: 614px;
+    width: 100%;
     background-color: #CF2B2B;
     margin: 0px 0px 35px 0px;
     position: relative;
     position: fixed;
     z-index: 1;
-    box-shadow: 0px 5px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 .topbar h1 {
@@ -75,7 +78,8 @@ body {
 
 
 }
-.escolhido{
+
+.escolhido {
     border: 5px solid #32B72F;
 }
 
@@ -92,6 +96,7 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 .escolha h2 {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -109,7 +114,7 @@ body {
 .bottombar {
     display: flex;
     height: 92px;
-    width: 614px;
+    width: 100%;
     background-color: #ffffff;
     position: relative;
     align-items: center;
@@ -134,7 +139,8 @@ body {
     box-sizing: border-box;
     padding: 7px 60px 14px;
 }
-.fechapedido{
+
+.fechapedido {
     width: 390px;
     height: 75px;
     border-radius: 50px;
@@ -147,4 +153,130 @@ body {
     border: none;
     box-sizing: border-box;
     padding: 7px 60px 14px;
+}
+
+.confirmapedido {
+    height: 353px;
+    width: 377px;
+    border-radius: 9px;
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    position: relative;
+
+}
+
+.grayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.confirmar {
+    height: 52px;
+    width: 329px;
+    left: 43px;
+    top: 583px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: #32B72F;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+}
+
+.cancelar {
+    height: 52px;
+    width: 329px;
+    left: 43px;
+    top: 583px;
+    border-radius: 100px;
+    background-color: #50D074;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+}
+
+.confirmapedido h1 {
+    font-size: 28px;
+}
+
+.msgtopo {
+    position: absolute;
+    font-weight: bold;
+    top: 20px;
+
+}
+
+.msgprato {
+    position: absolute;
+    top: 76px;
+    left: 20px;
+}
+
+.msgbebida {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.msgsobremesa {
+
+    position: absolute;
+    top: 160px;
+    left: 20px;
+}
+
+
+.msgpreçoprato {
+    position: absolute;
+    top: 76px;
+    right: 20px;
+
+}
+
+.msgpreçosobremesa {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+}
+
+.total {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+
+
+.msgpreçobebida {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+}
+
+.msgpreço {
+    position: absolute;
+    top: 200px;
+    right: 20px;
 }

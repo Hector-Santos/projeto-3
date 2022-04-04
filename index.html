@@ -143,9 +143,27 @@
             </div>
         </div>
         <div class="bottombar">
-            <button class="pedido" onclick="criaString()">Selecione os 3 itens
+            <button class="pedido" onclick="modalshow(); modal()">Selecione os 3 itens
                 <br\>para fechar o pedido
             </button>
+        </div>
+    </div>
+    <div class="grayout hidden" >
+        <div class="confirmapedido">
+           <h1 class="msgtopo">Confirme seu pedido</h1>
+                <h1 class = "msgprato">msgprato</h1>
+                <h1 class = "msgbebida">msgbebida</h1>
+                <h1 class = "msgsobremesa">msgsobremesa</h1>
+                <h1 class = "msgpreçoprato"> msgpreçoprato</h1>
+                <h1 class = "msgpreçosobremesa">msgpreçosobremesa</h1>
+                <h1 class = "total">Total</h1>
+                <h1 class = "msgpreçobebida">msgpreçobebida</h1>
+                <h1 class = "msgpreço">msgpreço</h1>
+
+            }
+            <button class="confirmar" onclick="criamensagem()">Tudo certo, pode pedir</button>
+        <button class="cancelar" onclick="modalhide()">Cancelar</button>
+
         </div>
     </div>
     <script src="javascript.js"> </script>

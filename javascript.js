@@ -62,17 +62,42 @@ function acendebotão() {
     }
 }
 
-function criaString () {
+function modalshow () { 
     if (prato !== null && bebida !== null && sobremesa !== null){
-    let preço = preçoprato + preçobebida + preçosobemesa;
-    preço = preço.toFixed(2)
-    let mensagem = " Olá, gostaria de fazer o pedido: \n" + "- Prato: " + prato + "\n- Bebida: " + bebida 
-    + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + preço
-   let uri = encodeURIComponent(mensagem)
-    alert(uri)
-    window.location.href = "https://wa.me/5531998541733/" + "?text=" + uri
+        document.querySelector(".grayout").classList.remove("hidden")
+        }
+}
+
+function modalhide () { 
+    if (prato !== null && bebida !== null && sobremesa !== null){
+        document.querySelector(".grayout").classList.add("hidden")
+        }
+}
+
+function modal() {
+    if (prato !== null && bebida !== null && sobremesa !== null){
+        let preço = preçoprato + preçobebida + preçosobemesa;
+        document.querySelector(".msgprato").innerHTML = prato;
+        document.querySelector(".msgpreçoprato").innerHTML = preçoprato.toFixed(2);
+        document.querySelector(".msgbebida").innerHTML = bebida;
+        document.querySelector(".msgpreçobebida").innerHTML = preçobebida.toFixed(2);
+        document.querySelector(".msgsobremesa").innerHTML = sobremesa;
+        document.querySelector(".msgpreçosobremesa").innerHTML = preçosobemesa.toFixed(2)
+        document.querySelector(".msgpreço").innerHTML = preço.toFixed(2);
+       
     }
-    
 }
 
 
+function criamensagem(){
+   
+    let nome = prompt("Qual é seu nome")
+        let endereço = prompt("qual o seu endereço?")
+        let preço = preçoprato + preçobebida + preçosobemesa;
+        preço = preço.toFixed(2)
+        let mensagem = " Olá, gostaria de fazer o pedido: \n" + "- Prato: " + prato + "\n- Bebida: " + bebida 
+        + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + preço + "\n \n Nome: " + nome + "\n Endereço: " + endereço
+       let uri = encodeURIComponent(mensagem)
+        window.location.href = "https://wa.me/5531998541733/" + "?text=" + uri
+    
+}
